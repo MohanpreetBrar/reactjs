@@ -15,7 +15,7 @@ use App\Http\Controllers\FormController;
 |
 */
 /// Student Class Routes 
-Route::get("/class",FormController::class, 'index');
+Route::get('/class',[FormController::class, 'index']);
 Route::get('/class',[FormController::class, 'store']);
 Route::post('/class/store',[FormController::class, 'show']); 
 
